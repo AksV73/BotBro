@@ -13,7 +13,7 @@ def bop(bot,update):
     bot.send_photo(chat_id=chat_id, photo=url)
 
 def main():
-    updater = Updater('1226224829:AAGK-3rL1J-O-kYLZkRjzkleZC-aWMZujEc')
+    updater = Updater('Telegram-bot-token')
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('bop',bop))
     updater.start_polling()
