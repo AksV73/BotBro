@@ -1,5 +1,5 @@
 from telegram.ext import (Updater,InlineQueryHandler,CommandHandler, MessageHandler, Filters)
-import requests
+
 import re
 import os
 PORT = int(os.environ.get('PORT', 5000))
@@ -40,18 +40,15 @@ def start(bot,update):
     
 
 def main():
-#<<<<<<< HEAD
     print('This bot dispenses images\n /woof for a dog image\n /meow for a cat image\n /birdie for a bird image')
     updater = Updater('1226224829:AAGK-3rL1J-O-kYLZkRjzkleZC-aWMZujEc')
-#=======
-#>>>>>>> fc8ff433ed838022dbf26e916064ad7dc29a94bc
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start',start))
     dp.add_handler(CommandHandler('woof',woof))
     dp.add_handler(CommandHandler('birdie',birdie))
     dp.add_handler(CommandHandler('meow',meow))
     
-   # updater.start_polling()
+   
     updater.start_webhook(listen="0.0.0.0",
                            port=int(PORT) ,
                            url_path='1226224829:AAGK-3rL1J-O-kYLZkRjzkleZC-aWMZujEc')
