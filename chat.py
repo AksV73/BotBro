@@ -54,7 +54,7 @@ def main():
     updater.start_webhook(listen="0.0.0.0",
                            port=int(PORT) ,
                            url_path='1226224829:AAGK-3rL1J-O-kYLZkRjzkleZC-aWMZujEc')
-    updater.bot.set_webhook('https://botbroanimals.herokuapp.com/'+'1226224829:AAGK-3rL1J-O-kYLZkRjzkleZC-aWMZujEc' )
+    updater.bot.setWebhook('https://botbroanimals.herokuapp.com/'+'1226224829:AAGK-3rL1J-O-kYLZkRjzkleZC-aWMZujEc' )
     updater.idle()
 
 if __name__ == '__main__':
