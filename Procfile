@@ -1,1 +1,1 @@
-web: python chat.py
+web: python3 chat.py
