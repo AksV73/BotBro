@@ -1,3 +1,5 @@
+import requests
+
 from telegram.ext import (Updater,InlineQueryHandler,CommandHandler, MessageHandler, Filters)
 
 import re
