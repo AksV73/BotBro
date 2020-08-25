@@ -43,7 +43,7 @@ def start(bot,update):
 
 def main():
     print('This bot dispenses images\n /woof for a dog image\n /meow for a cat image\n /birdie for a bird image')
-    updater = Updater('1226224829:AAGK-3rL1J-O-kYLZkRjzkleZC-aWMZujEc')
+    updater = Updater('Telegram-API key')
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start',start))
     dp.add_handler(CommandHandler('woof',woof))
@@ -53,8 +53,8 @@ def main():
    
     updater.start_webhook(listen="0.0.0.0",
                            port=int(PORT) ,
-                           url_path='1226224829:AAGK-3rL1J-O-kYLZkRjzkleZC-aWMZujEc')
-    updater.bot.setWebhook('https://botbroanimals.herokuapp.com/'+'1226224829:AAGK-3rL1J-O-kYLZkRjzkleZC-aWMZujEc' )
+                           url_path='Telegram API key')
+    updater.bot.setWebhook('https://yourbot.herokuapp.com/'+'Telegram API key' )
     updater.idle()
 
 if __name__ == '__main__':
